@@ -84,3 +84,7 @@ th, td {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
 }
+
+.fs-heading {
+    font-size: 3rem;
+}
