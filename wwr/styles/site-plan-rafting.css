@@ -10,10 +10,10 @@
   --heading-font: "Roboto", serif;
   --paragraph-font: "Roboto", serif;
 
-  --nav-bg-color: #22333b;
+  --nav-background-color: #22333b;
   --nav-link-color: #eae0d5;
   --nav-hover-link-color: #c6ac8f;
-  --nav-hover-bg-color: #0a0908;
+  --nav-hover-background-color: #0a0908;
 }
 
 body {
@@ -41,7 +41,7 @@ p {
 }
 
 nav {
-  background-color: var(--nav-bg-color);
+  background-color: var(--nav-background-color);
   font-size: 1.2rem;
   display: flex;
 }
@@ -59,7 +59,7 @@ nav a:visited {
 }
 nav a:hover {
   color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-bg-color);
+  background-color: var(--nav-hover-background-color);
 }
 
 thead {
