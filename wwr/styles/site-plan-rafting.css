@@ -3,17 +3,17 @@
 :root {
   --primary-color: #22333b;
   --secondary-color: #0a0908;
-  --accent1-color: #eae0d5 ;
+  --accent1-color: #eae0d5;
   --accent2-color: #c6ac8f;
   --accent3-color: #5e503f;
 
   --heading-font: "Roboto", serif;
   --paragraph-font: "Roboto", serif;
 
-  --nav-bg-color: var(--primary-color);
-  --nav-link-color: var(--accent1-color);
-  --nav-hover-link-color: var(--accent2-color);
-  --nav-hover-bg-color: var(--secondary-color);
+  --nav-bg-color: #22333b;
+  --nav-link-color: #eae0d5;
+  --nav-hover-link-color: #c6ac8f;
+  --nav-hover-bg-color: #0a0908;
 }
 
 body {
@@ -37,54 +37,56 @@ nav {
   display: flex;
 }
 
-nav a{
-    display: block;
-    color: var(--nav-link-color);
-    text-decoration: none;
-    padding: 1rem;
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
 }
 
-nav a:link, nav a:visited {
-    color: ar(--nav-link-color);
+nav a:link,
+nav a:visited {
+  color: ar(--nav-link-color);
 }
-nav a:hover{
-    color: var(--nav-hover-link-color);
-    background-color: var(--nav-hover-bg-color);
-}
-
-thead{
-    background-color: var(--accent3-color);
-    color: #eee;
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-bg-color);
 }
 
-th, td {
-    padding: 10px;
-    font-weight: bold;
+thead {
+  background-color: var(--accent3-color);
+  color: #eee;
 }
 
-.primary{
-    background-color: var(--primary-color);
-    color: white;
+th,
+td {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.primary {
+  background-color: var(--primary-color);
+  color: white;
 }
 
 .secondary {
-    background-color: var(--secondary-color);
-    color: white;
+  background-color: var(--secondary-color);
+  color: white;
 }
 
-.accent1{
-    background-color: var(--accent1-color);   
+.accent1 {
+  background-color: var(--accent1-color);
 }
 
-.accent2{
-    background-color: var(--accent2-color);
+.accent2 {
+  background-color: var(--accent2-color);
 }
 
-.colored-font{
-    background-color: var(--secondary-color);
-    color: var(--accent2-color);
+.colored-font {
+  background-color: var(--secondary-color);
+  color: var(--accent2-color);
 }
 
 .fs-heading {
-    font-size: 3rem;
+  font-size: 3rem;
 }
