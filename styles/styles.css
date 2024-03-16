@@ -24,6 +24,7 @@ main img {
     border: 1px solid steelblue;
     padding: 2px;
     box-shadow: 0 0 30px gray;
+    float: right;
 }
 
 p {
@@ -54,7 +55,6 @@ aside h2 {
 aside img {
  width: 200px;
  height: auto;
- float: right;
 }
 
 footer {
