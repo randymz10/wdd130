@@ -140,9 +140,18 @@ footer nav a img {
 }
 
 .hero article img {
-  width: 30%;
+  width: 25%;
   float: right;
   margin-left: 10px;
+}
+
+.adventure {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.adventure h2 {
 }
 
 .adventure img {
