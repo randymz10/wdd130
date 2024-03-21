@@ -24,12 +24,12 @@
 
 header {
   display: grid;
-	grid-template-columns: 1fr 2fr;
-	align-items: center;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
   margin-bottom: 1cap;
 }
 
-header img{
+header img {
   grid-column: 1/2;
 }
 
@@ -49,13 +49,11 @@ header nav a {
   color: var(--nav-link-color);
   text-decoration: none;
   padding: 1rem;
-  
 }
 
 header nav a:hover {
   text-decoration: underline;
   color: var(--accent1-color);
-
 }
 
 h1,
@@ -80,17 +78,38 @@ body {
 }
 
 h2 {
-    text-transform: uppercase;
-    margin: 25px 0;
+  text-transform: uppercase;
+  margin: 25px 0;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 100%;
+  padding-top: 3rem;
+}
+
+footer p, footer nav {
+  justify-self: center;
+  align-self: center;
+}
+
+footer nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 footer nav a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
+  margin: 0 0.5rem;
 }
 
 footer nav a img {
-    width: 48px;
-    height: auto;
+  width: 32px;
+  height: auto;
 }
 
 /*Classes*/
@@ -147,14 +166,18 @@ footer nav a img {
 
 .adventure {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 5rem 1fr;
 }
 
-.adventure h2 {
+.adventure .images {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
 }
 
-.adventure img {
-    width: 50%;
-    height: auto;
+.adventure .images img {
+  width: 200px;
+  height: 133px;
 }
+
+
