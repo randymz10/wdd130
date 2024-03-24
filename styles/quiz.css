@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+:root {
+    --primary: #222831;
+    --secondary: #31363F;
+    --accent1: #76ABAE;
+    --accent2: #EEEEEE;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto Mono", Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--accent2);
+  background-color: var(--primary);
+}
+
+header h1{
+    color: var(--accent1);
+}
+
+/* Classes */
+
+.container {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+
+.form-element {
+  margin: 1rem 0;
+}
+
+.form-element li {
+    color: var(--accent1);
+    font-weight: bold;
+}
+
+.form-element li span{
+    color: var(--accent2);
+    font-weight: lighter;
+}
+
+.form-element input,
+.form-element textarea,
+.form-element select {
+  width: 100%;
+  padding: 0.3rem 0;
+  margin-top: 0.5rem;
+}
+
+.form-element input[type="number"]::-webkit-outer-spin-button,
+.form-element input[type="number"]::-webkit-inner-spin-button,
+.form-element input[type="number"] {
+  -webkit-appearance: none;
+  margin: 0;
+  appearance: textfield;
+}
+
+.form-element pre {
+    margin: 1rem 0;
+    padding: 2rem 10px;
+    background-color: var(--secondary);
+    border-radius: 7px;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.7rem 0;
+  background-color: var(--secondary);
+  cursor: pointer;
+  border: 1px solid var(--secondary);
+  color: var(--accent2);
+  font-weight: bolder;
+}
+
+.btn:hover {
+    background-color: var(--accent1);
+    color: var(--primary);
+}
