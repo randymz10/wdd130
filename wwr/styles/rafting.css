@@ -270,6 +270,7 @@ footer nav a img {
 
 .location_map iframe {
   width: 100%;
+  border:0;
 }
 
 .contact {
