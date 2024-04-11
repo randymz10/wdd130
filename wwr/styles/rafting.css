@@ -58,7 +58,6 @@ header nav a {
 
 header nav a:hover {
   text-decoration: underline;
-  color: var(--accent1-color);
 }
 
 h1,
@@ -121,12 +120,14 @@ footer nav a img {
 /*Classes*/
 
 .hero,
-.trips {
+.trips,
+.homepage-hero {
   position: relative;
 }
 
 .hero img,
-.trips img {
+.trips img,
+.homepage-hero img {
   display: block;
   width: 100%;
   height: auto;
@@ -134,7 +135,8 @@ footer nav a img {
 
 .hero h1,
 .hero article,
-.trips_action {
+.trips_action,
+.hero-content {
   position: absolute;
 }
 
@@ -142,7 +144,6 @@ footer nav a img {
   width: 100%;
   top: 0;
   text-align: center;
-  color: var(--accent1-color);
   background-color: rgba(10, 9, 8, 0.6);
   margin: 2rem 0;
   padding: 15px 0;
@@ -161,10 +162,6 @@ footer nav a img {
   margin-top: 7em;
   padding: 1.5rem;
   background-color: rgba(34, 51, 59, 0.7);
-}
-
-.hero article p {
-  color: var(--accent1-color);
 }
 
 .hero article img {
@@ -206,7 +203,6 @@ footer nav a img {
   width: 60%;
   padding: 20px;
   margin: 0 auto;
-  background-color: var(--accent1-color);
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
@@ -284,7 +280,6 @@ footer nav a img {
 .contact {
   text-align: center;
   background-color: var(--secondary-color);
-  color: var(--accent1-color);
   padding: 1rem 0;
 }
 
@@ -395,7 +390,6 @@ footer nav a img {
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
-  color: var(--accent1-color);
   -webkit-text-stroke: 3px var(--secondary-color);
 }
 
@@ -404,18 +398,15 @@ footer nav a img {
   width: 80%;
   font-size: larger;
   font-weight: bold;
-  color: var(--accent1-color);
   margin-top: 3rem;
   text-align: justify;
 }
 
 .btn-black {
   background-color: var(--secondary-color);
-  color: var(--accent1-color);
   padding: 20px 50px;
   border: 0;
   border-radius: 10px;
-  color: var(--accent1-color);
   font-weight: bold;
   font-size: large;
   margin-top: 3rem;
@@ -437,7 +428,6 @@ footer nav a img {
   width: 30%;
   margin: 0 3rem;
   text-align: justify;
-  background-color: var(--accent1-color);
   border-radius: 10px;
 }
 
@@ -461,7 +451,6 @@ footer nav a img {
   font-weight: bold;
   font-style: italic;
   background-color: var(--accent3-color);
-  color: var(--accent1-color);
   border-radius: 10px;
 }
 
@@ -518,7 +507,6 @@ footer nav a img {
 
 .timeline_date {
   background-color: var(--accent3-color);
-  color: var(--accent1-color);
   padding: 5px 10px;
   border-radius: 10px;
   font-weight: bolder;
@@ -535,3 +523,123 @@ footer nav a img {
   margin-bottom: 0.5rem;
 }
 
+/* Homepae  */
+
+.homepage_hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.newsletter {
+  margin-top: 3rem;
+  background-color: #f4f4f4;
+  padding: 50px 0;
+}
+
+.newsletter h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.newsletter form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.newsletter input,
+.newsletter button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+.newsletter input[type="text"],
+.newsletter input[type="email"] {
+  width: 200px;
+}
+
+.newsletter button {
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.cta {
+  padding: 50px 0;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--accent1-color);
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.button:hover {
+  background-color: var(--secondary-color);
+}
+
+.homepage section {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.grid-item {
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 5px;
+}
+
+.grid-item img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 5px;
+}
+
+.grid-item p {
+  margin-top: 10px;
+}
+.homepage-hero img {
+  height: 700px;
+}
+.hero-content {
+  top: 0;
+  text-align: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content > div {
+  height: 70%;
+  background-color: rgba(10, 9, 8, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage-hero h1 {
+  margin: 2rem 0;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.homepage-hero p {
+  color: var(--accent1-color);
+  font-size: 1.5rem;
+}
